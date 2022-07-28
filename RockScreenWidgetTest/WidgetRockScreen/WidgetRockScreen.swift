@@ -1,8 +1,8 @@
 //
-//  WidgetRenderingMode.swift
-//  WidgetRenderingMode
+//  WidgetRockScreen.swift
+//  WidgetRockScreen
 //
-//  Created by nakamori on 2022/07/27.
+//  Created by nakamori on 2022/07/28.
 //
 
 import WidgetKit
@@ -40,8 +40,7 @@ struct SimpleEntry: TimelineEntry {
     let configuration: ConfigurationIntent
 }
 
-struct WidgetRenderingModeEntryView : View {
-    @Environment(\(.widgetRenderingMode) var renderingMode)
+struct WidgetRockScreenEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
@@ -50,21 +49,21 @@ struct WidgetRenderingModeEntryView : View {
 }
 
 @main
-struct WidgetRenderingMode: Widget {
-    let kind: String = "WidgetRenderingMode"
+struct WidgetRockScreen: Widget {
+    let kind: String = "WidgetRockScreen"
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            WidgetRenderingModeEntryView(entry: entry)
+            WidgetRockScreenEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
 }
 
-struct WidgetRenderingMode_Previews: PreviewProvider {
+struct WidgetRockScreen_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetRenderingModeEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        WidgetRockScreenEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

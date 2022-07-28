@@ -13,22 +13,22 @@
 		FD22D43528910251003B1E57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD22D43328910251003B1E57 /* Main.storyboard */; };
 		FD22D43728910253003B1E57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD22D43628910253003B1E57 /* Assets.xcassets */; };
 		FD22D43A28910253003B1E57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD22D43828910253003B1E57 /* LaunchScreen.storyboard */; };
-		FD22D448289105FB003B1E57 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD22D447289105FB003B1E57 /* WidgetKit.framework */; };
-		FD22D44A289105FB003B1E57 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD22D449289105FB003B1E57 /* SwiftUI.framework */; };
-		FD22D44D289105FB003B1E57 /* WidgetRenderingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD22D44C289105FB003B1E57 /* WidgetRenderingMode.swift */; };
-		FD22D450289105FD003B1E57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD22D44F289105FD003B1E57 /* Assets.xcassets */; };
-		FD22D452289105FD003B1E57 /* WidgetRenderingMode.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FD22D44E289105FB003B1E57 /* WidgetRenderingMode.intentdefinition */; };
-		FD22D453289105FD003B1E57 /* WidgetRenderingMode.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FD22D44E289105FB003B1E57 /* WidgetRenderingMode.intentdefinition */; };
-		FD22D456289105FD003B1E57 /* WidgetRenderingModeExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FD22D445289105FB003B1E57 /* WidgetRenderingModeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD3661282892703D00A469D4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD22D447289105FB003B1E57 /* WidgetKit.framework */; };
+		FD3661292892703D00A469D4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD22D449289105FB003B1E57 /* SwiftUI.framework */; };
+		FD36612C2892703D00A469D4 /* WidgetRockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD36612B2892703D00A469D4 /* WidgetRockScreen.swift */; };
+		FD36612F2892703E00A469D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD36612E2892703E00A469D4 /* Assets.xcassets */; };
+		FD3661312892703E00A469D4 /* WidgetRockScreen.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FD36612D2892703D00A469D4 /* WidgetRockScreen.intentdefinition */; };
+		FD3661322892703E00A469D4 /* WidgetRockScreen.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FD36612D2892703D00A469D4 /* WidgetRockScreen.intentdefinition */; };
+		FD3661352892703E00A469D4 /* WidgetRockScreenExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FD3661272892703C00A469D4 /* WidgetRockScreenExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FD22D454289105FD003B1E57 /* PBXContainerItemProxy */ = {
+		FD3661332892703E00A469D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FD22D42228910251003B1E57 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FD22D444289105FB003B1E57;
-			remoteInfo = WidgetRenderingModeExtension;
+			remoteGlobalIDString = FD3661262892703C00A469D4;
+			remoteInfo = WidgetRockScreenExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				FD22D456289105FD003B1E57 /* WidgetRenderingModeExtension.appex in Embed Foundation Extensions */,
+				FD3661352892703E00A469D4 /* WidgetRockScreenExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,13 +55,13 @@
 		FD22D43628910253003B1E57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD22D43928910253003B1E57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD22D43B28910253003B1E57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD22D445289105FB003B1E57 /* WidgetRenderingModeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetRenderingModeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD22D447289105FB003B1E57 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		FD22D449289105FB003B1E57 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		FD22D44C289105FB003B1E57 /* WidgetRenderingMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetRenderingMode.swift; sourceTree = "<group>"; };
-		FD22D44E289105FB003B1E57 /* WidgetRenderingMode.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetRenderingMode.intentdefinition; sourceTree = "<group>"; };
-		FD22D44F289105FD003B1E57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FD22D451289105FD003B1E57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3661272892703C00A469D4 /* WidgetRockScreenExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetRockScreenExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD36612B2892703D00A469D4 /* WidgetRockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetRockScreen.swift; sourceTree = "<group>"; };
+		FD36612D2892703D00A469D4 /* WidgetRockScreen.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetRockScreen.intentdefinition; sourceTree = "<group>"; };
+		FD36612E2892703E00A469D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD3661302892703E00A469D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +72,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD22D442289105FB003B1E57 /* Frameworks */ = {
+		FD3661242892703C00A469D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD22D44A289105FB003B1E57 /* SwiftUI.framework in Frameworks */,
-				FD22D448289105FB003B1E57 /* WidgetKit.framework in Frameworks */,
+				FD3661292892703D00A469D4 /* SwiftUI.framework in Frameworks */,
+				FD3661282892703D00A469D4 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				FD22D42C28910251003B1E57 /* RockScreenWidgetTest */,
-				FD22D44B289105FB003B1E57 /* WidgetRenderingMode */,
+				FD36612A2892703D00A469D4 /* WidgetRockScreen */,
 				FD22D446289105FB003B1E57 /* Frameworks */,
 				FD22D42B28910251003B1E57 /* Products */,
 			);
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				FD22D42A28910251003B1E57 /* RockScreenWidgetTest.app */,
-				FD22D445289105FB003B1E57 /* WidgetRenderingModeExtension.appex */,
+				FD3661272892703C00A469D4 /* WidgetRockScreenExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,15 +126,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD22D44B289105FB003B1E57 /* WidgetRenderingMode */ = {
+		FD36612A2892703D00A469D4 /* WidgetRockScreen */ = {
 			isa = PBXGroup;
 			children = (
-				FD22D44C289105FB003B1E57 /* WidgetRenderingMode.swift */,
-				FD22D44E289105FB003B1E57 /* WidgetRenderingMode.intentdefinition */,
-				FD22D44F289105FD003B1E57 /* Assets.xcassets */,
-				FD22D451289105FD003B1E57 /* Info.plist */,
+				FD36612B2892703D00A469D4 /* WidgetRockScreen.swift */,
+				FD36612D2892703D00A469D4 /* WidgetRockScreen.intentdefinition */,
+				FD36612E2892703E00A469D4 /* Assets.xcassets */,
+				FD3661302892703E00A469D4 /* Info.plist */,
 			);
-			path = WidgetRenderingMode;
+			path = WidgetRockScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,28 +152,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				FD22D455289105FD003B1E57 /* PBXTargetDependency */,
+				FD3661342892703E00A469D4 /* PBXTargetDependency */,
 			);
 			name = RockScreenWidgetTest;
 			productName = RockScreenWidgetTest;
 			productReference = FD22D42A28910251003B1E57 /* RockScreenWidgetTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FD22D444289105FB003B1E57 /* WidgetRenderingModeExtension */ = {
+		FD3661262892703C00A469D4 /* WidgetRockScreenExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD22D457289105FD003B1E57 /* Build configuration list for PBXNativeTarget "WidgetRenderingModeExtension" */;
+			buildConfigurationList = FD3661362892703F00A469D4 /* Build configuration list for PBXNativeTarget "WidgetRockScreenExtension" */;
 			buildPhases = (
-				FD22D441289105FB003B1E57 /* Sources */,
-				FD22D442289105FB003B1E57 /* Frameworks */,
-				FD22D443289105FB003B1E57 /* Resources */,
+				FD3661232892703C00A469D4 /* Sources */,
+				FD3661242892703C00A469D4 /* Frameworks */,
+				FD3661252892703C00A469D4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WidgetRenderingModeExtension;
-			productName = WidgetRenderingModeExtension;
-			productReference = FD22D445289105FB003B1E57 /* WidgetRenderingModeExtension.appex */;
+			name = WidgetRockScreenExtension;
+			productName = WidgetRockScreenExtension;
+			productReference = FD3661272892703C00A469D4 /* WidgetRockScreenExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +189,7 @@
 					FD22D42928910251003B1E57 = {
 						CreatedOnToolsVersion = 14.0;
 					};
-					FD22D444289105FB003B1E57 = {
+					FD3661262892703C00A469D4 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -208,7 +208,7 @@
 			projectRoot = "";
 			targets = (
 				FD22D42928910251003B1E57 /* RockScreenWidgetTest */,
-				FD22D444289105FB003B1E57 /* WidgetRenderingModeExtension */,
+				FD3661262892703C00A469D4 /* WidgetRockScreenExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -224,11 +224,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD22D443289105FB003B1E57 /* Resources */ = {
+		FD3661252892703C00A469D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD22D450289105FD003B1E57 /* Assets.xcassets in Resources */,
+				FD36612F2892703E00A469D4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,29 +239,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD22D453289105FD003B1E57 /* WidgetRenderingMode.intentdefinition in Sources */,
 				FD22D43228910251003B1E57 /* ViewController.swift in Sources */,
 				FD22D42E28910251003B1E57 /* AppDelegate.swift in Sources */,
 				FD22D43028910251003B1E57 /* SceneDelegate.swift in Sources */,
+				FD3661322892703E00A469D4 /* WidgetRockScreen.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD22D441289105FB003B1E57 /* Sources */ = {
+		FD3661232892703C00A469D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD22D452289105FD003B1E57 /* WidgetRenderingMode.intentdefinition in Sources */,
-				FD22D44D289105FB003B1E57 /* WidgetRenderingMode.swift in Sources */,
+				FD36612C2892703D00A469D4 /* WidgetRockScreen.swift in Sources */,
+				FD3661312892703E00A469D4 /* WidgetRockScreen.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FD22D455289105FD003B1E57 /* PBXTargetDependency */ = {
+		FD3661342892703E00A469D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FD22D444289105FB003B1E57 /* WidgetRenderingModeExtension */;
-			targetProxy = FD22D454289105FD003B1E57 /* PBXContainerItemProxy */;
+			target = FD3661262892703C00A469D4 /* WidgetRockScreenExtension */;
+			targetProxy = FD3661332892703E00A469D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -457,17 +457,17 @@
 			};
 			name = Release;
 		};
-		FD22D458289105FD003B1E57 /* Debug */ = {
+		FD3661372892703F00A469D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B9WD868NNN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WidgetRenderingMode/Info.plist;
+				INFOPLIST_FILE = WidgetRockScreen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetRockScreen;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,7 +475,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = emiri.RockScreenWidgetTest.WidgetRenderingMode;
+				PRODUCT_BUNDLE_IDENTIFIER = emiri.RockScreenWidgetTest.WidgetRockScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -484,17 +484,17 @@
 			};
 			name = Debug;
 		};
-		FD22D459289105FD003B1E57 /* Release */ = {
+		FD3661382892703F00A469D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B9WD868NNN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WidgetRenderingMode/Info.plist;
+				INFOPLIST_FILE = WidgetRockScreen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetRockScreen;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -502,7 +502,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = emiri.RockScreenWidgetTest.WidgetRenderingMode;
+				PRODUCT_BUNDLE_IDENTIFIER = emiri.RockScreenWidgetTest.WidgetRockScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -532,11 +532,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD22D457289105FD003B1E57 /* Build configuration list for PBXNativeTarget "WidgetRenderingModeExtension" */ = {
+		FD3661362892703F00A469D4 /* Build configuration list for PBXNativeTarget "WidgetRockScreenExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD22D458289105FD003B1E57 /* Debug */,
-				FD22D459289105FD003B1E57 /* Release */,
+				FD3661372892703F00A469D4 /* Debug */,
+				FD3661382892703F00A469D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
