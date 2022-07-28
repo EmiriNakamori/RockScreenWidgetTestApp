@@ -43,8 +43,67 @@ struct SimpleEntry: TimelineEntry {
 struct WidgetRockScreenEntryView : View {
     var entry: Provider.Entry
 
+    @Environment(\.widgetRenderingMode) var renderingMode
+    @Environment(\.widgetFamily) var family
     var body: some View {
-        Text(entry.date, style: .time)
+        //        switch renderingMode {
+        //        case .fullColor:
+        //            Text("Full color")
+        //        case .accented:
+        //            VStack(alignment: .leading) {
+        //                Text("Headline")
+        //                    .font(.headline)
+        //                    .widgetAccentable()
+        //                Text("Body 1")
+        //                Text("Body 2")
+        //            }.frame(maxWidth: .infinity, alignment: .leading)
+        //        case .vibrant:
+        //            Text("vibrant")
+        //        default:
+        //            Text("default")
+        //        }
+
+        switch family {
+        case .systemSmall:
+            Text("スモールver")
+        case .systemMedium:
+            Text("ミディアムver")
+        case .systemLarge:
+            Text("ラージver")
+        case .systemExtraLarge:
+            Text("エクストララージver")
+        case .accessoryCircular:
+            ZStack {
+                AccessoryWidgetBackground()
+                VStack {
+                    Image("apple")
+                        .resizable()
+                        .frame(width: 30.0, height: 30.0, alignment: .leading)
+                }
+            }
+        case .accessoryRectangular:
+            VStack(alignment: .leading) {
+                Text("10:00-12:00PM")
+                //                Text("WWDC22 Keynote")
+                //                    .font(.headline)
+                //                    .widgetAccentable()
+                Image("risu")
+                    .resizable()
+                    .frame(width: 30.0, height: 30.0, alignment: .leading)
+                Text("1 Apple Park Way.CCCCC")
+            }.frame(maxWidth: .infinity, alignment: .leading)
+
+        case .accessoryInline:
+            HStack {
+                Image("apple")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 30.0, height: 30.0, alignment: .leading)
+                Text("apple")
+            }
+        @unknown default:
+            Text("default")
+        }
     }
 }
 
@@ -58,6 +117,7 @@ struct WidgetRockScreen: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([.accessoryCircular, .accessoryRectangular, .accessoryInline])
     }
 }
 
