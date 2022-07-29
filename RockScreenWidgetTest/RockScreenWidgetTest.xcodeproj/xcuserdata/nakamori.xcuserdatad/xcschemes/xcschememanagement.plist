@@ -7,6 +7,11 @@
 		<key>RockScreenWidgetTest.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>WatchScreen Watch App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 		<key>WidgetExtension.xcscheme_^#shared#^_</key>
@@ -19,10 +24,20 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>WidgetRockScreenExtension.xcscheme_^#shared#^_</key>
+		<key>WidgetRockScreenExtension copy.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>WidgetRockScreenExtension watch.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>WidgetRockScreenExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 </dict>

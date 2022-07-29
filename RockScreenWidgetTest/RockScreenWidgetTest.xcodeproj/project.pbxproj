@@ -20,6 +20,21 @@
 		FD3661312892703E00A469D4 /* WidgetRockScreen.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FD36612D2892703D00A469D4 /* WidgetRockScreen.intentdefinition */; };
 		FD3661322892703E00A469D4 /* WidgetRockScreen.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FD36612D2892703D00A469D4 /* WidgetRockScreen.intentdefinition */; };
 		FD3661352892703E00A469D4 /* WidgetRockScreenExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FD3661272892703C00A469D4 /* WidgetRockScreenExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD711436289410300035DE74 /* WidgetRockScreenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD711435289410300035DE74 /* WidgetRockScreenProvider.swift */; };
+		FD711437289410300035DE74 /* WidgetRockScreenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD711435289410300035DE74 /* WidgetRockScreenProvider.swift */; };
+		FD711439289410D80035DE74 /* WidgetRockScreenEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD711438289410D80035DE74 /* WidgetRockScreenEntryModel.swift */; };
+		FD71143A289410D80035DE74 /* WidgetRockScreenEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD711438289410D80035DE74 /* WidgetRockScreenEntryModel.swift */; };
+		FD71143D2894113A0035DE74 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD71143B2894113A0035DE74 /* CircularView.swift */; };
+		FD71143E28942B0F0035DE74 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7114302893DCFE0035DE74 /* WidgetBundle.swift */; };
+		FD71143F28942B160035DE74 /* CircularMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7114322893F9F10035DE74 /* CircularMaster.swift */; };
+		FD71144028942B1F0035DE74 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD71143B2894113A0035DE74 /* CircularView.swift */; };
+		FD71144128942B220035DE74 /* CircularMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7114322893F9F10035DE74 /* CircularMaster.swift */; };
+		FD71144328942B320035DE74 /* WidgetRockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD36612B2892703D00A469D4 /* WidgetRockScreen.swift */; };
+		FDD72D34289370A300C154CF /* WatchScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD72D33289370A300C154CF /* WatchScreenApp.swift */; };
+		FDD72D36289370A300C154CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD72D35289370A300C154CF /* ContentView.swift */; };
+		FDD72D38289370A500C154CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD72D37289370A500C154CF /* Assets.xcassets */; };
+		FDD72D3B289370A500C154CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD72D3A289370A500C154CF /* Preview Assets.xcassets */; };
+		FDD72D3E289370A500C154CF /* WatchScreen Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FDD72D31289370A300C154CF /* WatchScreen Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +44,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = FD3661262892703C00A469D4;
 			remoteInfo = WidgetRockScreenExtension;
+		};
+		FDD72D3C289370A500C154CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD22D42228910251003B1E57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDD72D30289370A300C154CF;
+			remoteInfo = "WatchScreen Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +62,27 @@
 			dstSubfolderSpec = 13;
 			files = (
 				FD3661352892703E00A469D4 /* WidgetRockScreenExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD72D42289370A500C154CF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FDD72D3E289370A500C154CF /* WatchScreen Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD72D70289377FC00C154CF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +105,16 @@
 		FD36612D2892703D00A469D4 /* WidgetRockScreen.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetRockScreen.intentdefinition; sourceTree = "<group>"; };
 		FD36612E2892703E00A469D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD3661302892703E00A469D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7114302893DCFE0035DE74 /* WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
+		FD7114322893F9F10035DE74 /* CircularMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularMaster.swift; sourceTree = "<group>"; };
+		FD711435289410300035DE74 /* WidgetRockScreenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetRockScreenProvider.swift; sourceTree = "<group>"; };
+		FD711438289410D80035DE74 /* WidgetRockScreenEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetRockScreenEntryModel.swift; sourceTree = "<group>"; };
+		FD71143B2894113A0035DE74 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
+		FDD72D31289370A300C154CF /* WatchScreen Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchScreen Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD72D33289370A300C154CF /* WatchScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchScreenApp.swift; sourceTree = "<group>"; };
+		FDD72D35289370A300C154CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FDD72D37289370A500C154CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDD72D3A289370A500C154CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +134,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FDD72D2E289370A300C154CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +149,7 @@
 			children = (
 				FD22D42C28910251003B1E57 /* RockScreenWidgetTest */,
 				FD36612A2892703D00A469D4 /* WidgetRockScreen */,
+				FDD72D32289370A300C154CF /* WatchScreen Watch App */,
 				FD22D446289105FB003B1E57 /* Frameworks */,
 				FD22D42B28910251003B1E57 /* Products */,
 			);
@@ -99,6 +160,7 @@
 			children = (
 				FD22D42A28910251003B1E57 /* RockScreenWidgetTest.app */,
 				FD3661272892703C00A469D4 /* WidgetRockScreenExtension.appex */,
+				FDD72D31289370A300C154CF /* WatchScreen Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,12 +191,84 @@
 		FD36612A2892703D00A469D4 /* WidgetRockScreen */ = {
 			isa = PBXGroup;
 			children = (
+				FD71142A2893DA5B0035DE74 /* Resources */,
+				FD71142B2893DA780035DE74 /* Views */,
 				FD36612B2892703D00A469D4 /* WidgetRockScreen.swift */,
 				FD36612D2892703D00A469D4 /* WidgetRockScreen.intentdefinition */,
 				FD36612E2892703E00A469D4 /* Assets.xcassets */,
 				FD3661302892703E00A469D4 /* Info.plist */,
 			);
 			path = WidgetRockScreen;
+			sourceTree = "<group>";
+		};
+		FD71142A2893DA5B0035DE74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD7114302893DCFE0035DE74 /* WidgetBundle.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD71142B2893DA780035DE74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD71142C2893DA8E0035DE74 /* Circular */,
+				FD71142E2893DAF90035DE74 /* Rectangular */,
+				FD71142F2893DB030035DE74 /* Inline */,
+				FD71143428940FA00035DE74 /* TimeLine */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD71142C2893DA8E0035DE74 /* Circular */ = {
+			isa = PBXGroup;
+			children = (
+				FD7114322893F9F10035DE74 /* CircularMaster.swift */,
+				FD71143B2894113A0035DE74 /* CircularView.swift */,
+			);
+			path = Circular;
+			sourceTree = "<group>";
+		};
+		FD71142E2893DAF90035DE74 /* Rectangular */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rectangular;
+			sourceTree = "<group>";
+		};
+		FD71142F2893DB030035DE74 /* Inline */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Inline;
+			sourceTree = "<group>";
+		};
+		FD71143428940FA00035DE74 /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				FD711435289410300035DE74 /* WidgetRockScreenProvider.swift */,
+				FD711438289410D80035DE74 /* WidgetRockScreenEntryModel.swift */,
+			);
+			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		FDD72D32289370A300C154CF /* WatchScreen Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				FDD72D33289370A300C154CF /* WatchScreenApp.swift */,
+				FDD72D35289370A300C154CF /* ContentView.swift */,
+				FDD72D37289370A500C154CF /* Assets.xcassets */,
+				FDD72D39289370A500C154CF /* Preview Content */,
+			);
+			path = "WatchScreen Watch App";
+			sourceTree = "<group>";
+		};
+		FDD72D39289370A500C154CF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FDD72D3A289370A500C154CF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,11 +282,13 @@
 				FD22D42728910251003B1E57 /* Frameworks */,
 				FD22D42828910251003B1E57 /* Resources */,
 				FD22D45A289105FD003B1E57 /* Embed Foundation Extensions */,
+				FDD72D42289370A500C154CF /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				FD3661342892703E00A469D4 /* PBXTargetDependency */,
+				FDD72D3D289370A500C154CF /* PBXTargetDependency */,
 			);
 			name = RockScreenWidgetTest;
 			productName = RockScreenWidgetTest;
@@ -176,6 +312,24 @@
 			productReference = FD3661272892703C00A469D4 /* WidgetRockScreenExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		FDD72D30289370A300C154CF /* WatchScreen Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDD72D3F289370A500C154CF /* Build configuration list for PBXNativeTarget "WatchScreen Watch App" */;
+			buildPhases = (
+				FDD72D2D289370A300C154CF /* Sources */,
+				FDD72D2E289370A300C154CF /* Frameworks */,
+				FDD72D2F289370A300C154CF /* Resources */,
+				FDD72D70289377FC00C154CF /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchScreen Watch App";
+			productName = "WatchScreen Watch App";
+			productReference = FDD72D31289370A300C154CF /* WatchScreen Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,6 +344,9 @@
 						CreatedOnToolsVersion = 14.0;
 					};
 					FD3661262892703C00A469D4 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					FDD72D30289370A300C154CF = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -209,6 +366,7 @@
 			targets = (
 				FD22D42928910251003B1E57 /* RockScreenWidgetTest */,
 				FD3661262892703C00A469D4 /* WidgetRockScreenExtension */,
+				FDD72D30289370A300C154CF /* WatchScreen Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +390,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FDD72D2F289370A300C154CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD72D3B289370A500C154CF /* Preview Assets.xcassets in Resources */,
+				FDD72D38289370A500C154CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -239,9 +406,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD71144128942B220035DE74 /* CircularMaster.swift in Sources */,
+				FD711436289410300035DE74 /* WidgetRockScreenProvider.swift in Sources */,
+				FD71144028942B1F0035DE74 /* CircularView.swift in Sources */,
 				FD22D43228910251003B1E57 /* ViewController.swift in Sources */,
+				FD711439289410D80035DE74 /* WidgetRockScreenEntryModel.swift in Sources */,
 				FD22D42E28910251003B1E57 /* AppDelegate.swift in Sources */,
 				FD22D43028910251003B1E57 /* SceneDelegate.swift in Sources */,
+				FD71144328942B320035DE74 /* WidgetRockScreen.swift in Sources */,
 				FD3661322892703E00A469D4 /* WidgetRockScreen.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,8 +422,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD71143D2894113A0035DE74 /* CircularView.swift in Sources */,
 				FD36612C2892703D00A469D4 /* WidgetRockScreen.swift in Sources */,
 				FD3661312892703E00A469D4 /* WidgetRockScreen.intentdefinition in Sources */,
+				FD71143E28942B0F0035DE74 /* WidgetBundle.swift in Sources */,
+				FD71143A289410D80035DE74 /* WidgetRockScreenEntryModel.swift in Sources */,
+				FD711437289410300035DE74 /* WidgetRockScreenProvider.swift in Sources */,
+				FD71143F28942B160035DE74 /* CircularMaster.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD72D2D289370A300C154CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD72D36289370A300C154CF /* ContentView.swift in Sources */,
+				FDD72D34289370A300C154CF /* WatchScreenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +448,11 @@
 			isa = PBXTargetDependency;
 			target = FD3661262892703C00A469D4 /* WidgetRockScreenExtension */;
 			targetProxy = FD3661332892703E00A469D4 /* PBXContainerItemProxy */;
+		};
+		FDD72D3D289370A500C154CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDD72D30289370A300C154CF /* WatchScreen Watch App */;
+			targetProxy = FDD72D3C289370A500C154CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -460,6 +651,7 @@
 		FD3661372892703F00A469D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
@@ -467,7 +659,6 @@
 				DEVELOPMENT_TEAM = B9WD868NNN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetRockScreen/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WidgetRockScreen;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,6 +678,7 @@
 		FD3661382892703F00A469D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
@@ -494,7 +686,6 @@
 				DEVELOPMENT_TEAM = B9WD868NNN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetRockScreen/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WidgetRockScreen;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -508,6 +699,64 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDD72D40289370A500C154CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchScreen Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = B9WD868NNN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = emiri.RockScreenWidgetTest;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emiri.RockScreenWidgetTest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		FDD72D41289370A500C154CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchScreen Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = B9WD868NNN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = emiri.RockScreenWidgetTest;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emiri.RockScreenWidgetTest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -537,6 +786,15 @@
 			buildConfigurations = (
 				FD3661372892703F00A469D4 /* Debug */,
 				FD3661382892703F00A469D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDD72D3F289370A500C154CF /* Build configuration list for PBXNativeTarget "WatchScreen Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD72D40289370A500C154CF /* Debug */,
+				FDD72D41289370A500C154CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
