@@ -40,25 +40,27 @@ struct CircularView: View {
             Text("エクストララージver")
         case .accessoryCircular:
             ZStack {
-                AccessoryWidgetBackground()
                 VStack {
-                    Image("widget_warning_icon_watch_005")
+                    Image("warning_icon_katanuki")
                         .resizable()
                         .frame(width: 50, height: 50, alignment: .leading)
                 }
             }
         case .accessoryRectangular:
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("千代田区").font(.headline)
-                        .widgetAccentable()
-                    Text("上昇注意")
-                    Text("1014hPa")
+            ZStack {
+//                AccessoryWidgetBackground()
+                HStack(alignment: .center, spacing: 0) {
+                    VStack(alignment: .leading) {
+                        Text("千代田区").font(.headline)
+                            .widgetAccentable()
+                        Text("上昇注意")
+                        Text("1014hPa")
 
-                }.frame(maxWidth: .infinity, alignment: .leading)
-                Image("widget_warning_icon_watch_005")
-                    .resizable()
-                    .frame(width: 60, height: 60, alignment: .leading)
+                    }.frame(maxWidth: .infinity, alignment: .leading)
+                    Image("warning_icon_katanuki")
+                        .resizable()
+                        .frame(width: 50, height: 50, alignment: .leading)
+                }
             }
 
         case .accessoryInline:
